@@ -1,0 +1,8 @@
+.day_min_max {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+.day_min_max .min {
+  color: #a09fb1;
+}

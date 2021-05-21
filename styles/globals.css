@@ -1,0 +1,225 @@
+@font-face {
+  font-family: raleway;
+  src: url("/fonts/Raleway-Regular.ttf");
+}
+html, body, p, h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+  font-family: raleway;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.btn{
+  background-color: #6e707a;
+  color: #e7e7eb;
+  border: none;
+  cursor: pointer;
+}
+.btn-default {
+  font: 16px raleway;
+  width: 161px;
+  height: 40px;
+}
+.btn-circle {
+  font: 700 18px raleway;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 8px;
+}
+.btn-circle.active {
+  background-color: #e7e7eb;
+  color: #110e3c;
+}
+
+.sidebar {
+  background-color: #1e213a;
+  font: normal 500 raleway;
+  padding: 0 58px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.side-today {
+  background-image: url("/images/cloud2.png");
+  background-repeat: no-repeat;
+  animation: slide 8s ease-in-out infinite;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+.sidebar .side_control {
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  background-color: #100e1d;
+  height: 100%;
+}
+.day_wrap {
+  background-color: #1e213a;
+  color: #e7e7eb;
+  height: 177px;
+  font: 500 16px raleway;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.title {
+  color: #e7e7eb;
+  margin: 60px 0;
+}
+.box-mondel1,
+.box-mondel2 {
+  background: #1e213a;
+  color: #e7e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0;
+}
+.box-mondel1 {
+  height: 204px;
+}
+.box-mondel2 {
+  height: 160px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  font: 500 14px raleway;
+  color: #a09fb1;
+  padding: 30px 0;
+}
+.footer a,
+.footer a:hover,
+.footer a:active {
+  font-weight: bold;
+  color: #a09fb1;
+}
+
+/* Extra Small devices*/
+@media (max-width: 575.98px) {
+  .sidebar {
+    width: 100%;
+    height: 810px;
+  }
+  .content {
+    width: 100%;
+    padding: 20px 10%;
+  }
+  .day_wrap {
+    flex: 0 0 48%;
+    margin: 5px 3px;
+  }
+  .title h1 {
+    font-size: 24px;
+  }
+  .box-mondel1,
+  .box-mondel2 {
+    flex: 0 1 100%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .sidebar {
+    width: 100%;
+    height: 810px;
+  }
+  .content {
+    width: 100%;
+    padding: 20px 10%;
+  }
+  .day_wrap {
+    flex: 0 0 48%;
+    height: 160px;
+    margin: 5px 3px;
+  }
+  .title h1 {
+    font-size: 24px;
+  }
+  .box-mondel1,
+  .box-mondel2 {
+    flex: 0 1 100%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: 810px; 
+  }
+  .content {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .layout {
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 35%;
+    height: auto; 
+  }
+  .content {
+    width: 65%;
+    height: 100%;
+    padding: 40px 30px;
+  }
+  .day_wrap {
+    flex: 0 0 18%;
+    margin: 10px 3px;
+  }
+  .title h1 {
+    font-size: 28px;
+  }
+  .box-mondel1,
+  .box-mondel2 {
+    flex: 0 1 48%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 30%;
+  }
+  .content {
+    width: 70%;
+    padding: 40px 170px;
+  }
+}

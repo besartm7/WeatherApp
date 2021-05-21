@@ -1,0 +1,29 @@
+.today_img,
+.today_location {
+  display: flex;
+  justify-content: center;
+}
+.today_temp h1 {
+  font: 500 144px raleway;
+  text-align: center;
+  color: #E7E7EB;
+}
+.today_temp h1 i {
+  font: 48px sans-serif;
+  color: #a09fb1;
+}
+.today_weather_state h2 {
+  font: 600 36px raleway;
+  text-align: center;
+  color: #a09fb1;
+}
+.today_date p {
+  color: #88869d;
+  font: 500 18px raleway;
+  text-align: center;
+}
+.today_location {
+  font: 600 18px raleway;
+  align-items: center;
+  color: #88869d;
+}

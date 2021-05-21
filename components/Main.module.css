@@ -1,0 +1,58 @@
+.converters {
+  text-align: right;
+}
+.converters button {
+  margin: 10px 5px;
+}
+.hightlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.head {
+  font: 500 16px raleway;
+}
+.body {
+  font: 700 64px raleway;
+}
+.body span {
+  font: 500 30px raleway;
+}
+.wind {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100px;
+}
+.windDirection {
+  background: rgba(255, 255, 255, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.windDirection span {
+  font-size: 18px;
+  padding: 0.4rem;
+}
+.humidity_bar {
+  width: 65%;
+}
+.humidity_bar .values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.humidity_bar .progress_wrap {
+  background-color: #e7e7eb;
+  border-radius: 80px;
+  height: 8px;
+}
+.humidity_bar .progress_wrap .bar {
+  background-color: #ffec65;
+  border-radius: 80px;
+  height: 8px;
+}
+.humidity_bar .percent {
+  text-align: right;
+}
