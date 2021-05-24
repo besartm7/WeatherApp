@@ -4,7 +4,7 @@ import classes from "./Day.module.css";
 
 function Day({ day, i, converter, today }) {
   return (
-    <div className="day_wrap" key={day.id}>
+    <div className="day_wrap">
       <div>
         <p>
           {i === 0

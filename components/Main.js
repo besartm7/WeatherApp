@@ -9,12 +9,12 @@ function Main({ changeConverter, converter, today, other }) {
   return (
     <div className="content">
       <div className={classes.converters}>
-        <Button style={!converter ? "btn btn-circle active" : "btn btn-circle"} action={changeConverter}>°C</Button>
-        <Button style={converter ? "btn btn-circle active" : "btn btn-circle"} action={changeConverter}>°F</Button>
+        <Button style={!converter ? "btn btn-circle active" : "btn btn-circle"} action={converter ? changeConverter : null}>°C</Button>
+        <Button style={converter ? "btn btn-circle active" : "btn btn-circle"} action={!converter ? changeConverter : null}>°F</Button>
       </div>
       <div className="container">
         {other.map((day, i) => (
-          <Day day={day} i={i} converter={converter} today={today} />
+          <Day day={day} i={i} converter={converter} today={today} key={day.id} />
         ))}
       </div>
       <div className="title">
